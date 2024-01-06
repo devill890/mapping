@@ -11,7 +11,9 @@ const Map = () => {
     const fetchData = async () => {
       try {
         // Example GeoJSON data endpoint
-        const response = await axios.get('https://example.com/your-geojson-endpoint');
+        // const response = await axios.get('https://example.com/your-geojson-endpoint');
+        const response = await axios.get('https://raw.githubusercontent.com/gregoiredavid/france-geojson/master/regions/ile-de-france/departements-ile-de-france.geojson');
+
 
         // Check if the API response contains valid GeoJSON data
         if (response.data && response.data.features) {
